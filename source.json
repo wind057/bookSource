@@ -1,0 +1,72 @@
+[{
+    "name": "燃文",
+    "url": "http://www.ranwen.com",
+    "enc": "gbk",
+    "info": {
+        "name": "//div[@class='tna']/a",
+        "author": "//td[@class='tc'][1]",
+        "category": "//td[@class='tc'][2]/a",
+        "cover": "//img[@class='novel_cover']/@src",
+        "intro" : "//table[@class='ffw']/tr[4]/td"
+    },
+    "chapter": {
+        "list": "//div[@class='clc']/a"
+    },
+    "content": {
+        "text": "//div[@id='cp_content']"
+    },
+    "search": {
+        "enc": "gkb",
+        "searchUrl": "/s/{{key}}/1/",
+        "method": "GET",
+        "param": "",
+        "list": "//div[@class='conter']/ul/following-sibling::*[1]",
+        "name": "//ul/li[@class='conter1']/a",
+        "url": "//ul/li[@class='conter1']/a/@href",
+        "author": "//ul/li[@class='conter4']",
+        "cover": "",
+        "intro": "",
+        "category": "",
+        "latestChapter": "//ul/li[2]/a",
+        "latestChapterDate": "//ul/li[4]"
+    }
+}
+,{
+    "name": "笔趣趣",
+    "url": "https://www.biququ.com",
+    "enc": "utf-8",
+    "info": {
+        "template": "t1",
+        "author": "//div[@id='info']/p[1]",
+        "latestChapter": "//div[@id='info']/p[4]",
+        "latestChapterDate": "//div[@id='info']/p[2]",
+        "cover": "//div[@id='fmimg']/img/@src",
+        "intro": "//div[@id='intro']"
+    },
+    "chapter": {
+        "list": "//div[@id='list']/dl/dd/a"
+    },
+    "content": {
+        "text": "//div[@id='content']"
+    },
+    "RankingList":{
+        "title":"//h2",
+        "list":"//a",
+        "types": "//div[@class='novelslist']/div"
+    },
+    "search": {
+        "enc": "utf-8",
+        "searchUrl": "/searchbook.php",
+        "method": "GET",
+        "param": "search_key={{key}}",
+        "list": "//div[@class='search-list']/li[2]",
+        "url": "//a/@href",
+        "name": "//a/",
+        "author": "/span[@class='s4']",
+        "cover": "",
+        "intro": "",
+        "category": "",
+        "latestChapter": "//span[@class='s3']/a",
+        "latestChapterDate": "//span[@class='s6']"
+    }
+}
